@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  /* preloader var  */
+  :root {
+    --hue: 84;
+    --bg: hsl(var(--hue),10%,90%);
+    --fg: hsl(var(--hue),10%,10%);
+    --primary: hsl(var(--hue),90%,55%);
+    --primary-l: hsl(var(--hue),90%,65%);
+    --primary-d: hsl(var(--hue),90%,45%);
+    --white: hsl(var(--hue),10%,100%);
+    --white-d: hsl(var(--hue),10%,45%);
+  }
+
+  /* main var  */
+  :root {
+    /* fonts */
+    --font-quicksand: Quicksand;
+    --font-inter: Inter;
+
+    /* Colors */
+    --color-gray-100: #948f8f;
+    --color-gray-200: #838383;
+    --color-gray-300: #878787e6;
+    --color-white: #fff;
+    --color-whitesmoke-100: #f5f5f5;
+    --color-black: #000;
+    --color-yellowgreen: #87d60f;
+    --color-silver: #b7b7b7;
+    --color-darksalmon: #feafa2;
+    --color-display-section: #FFCAC1;
+    --color-darkgray-100: #a1a1a1;
+    --color-darkgray-200: #979594;
+    --color-skyblue: #49c2df;
+    --color-darkslategray: #363636;
+    --color-mediumseagreen: #2ec774;
+    --color-palevioletred: #f36f8f;
+    --color-dimgray: #515151;
+    --color-footer:#06242F;
+  
+    /* Border radiuses */
+    --br-8xs: 5px;
+    --br-10xs: 3px;
+    --br-4xl: 23px;
+  }
+  

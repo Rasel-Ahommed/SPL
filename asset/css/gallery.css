@@ -1,0 +1,104 @@
+.galleryBanner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url(../img/fixedImg.webp);
+    background-position: center center;
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galleryTitle {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: calc(10px + 1vw);
+    font-weight: 600;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+/* gallery image css start  */
+.GalleryTitle {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.GalleryTitle h3 {
+    font-size: calc(10px + 2vw);
+    font-weight: 800;
+    text-decoration: underline;
+    padding-block: calc(20px + 5vw);
+}
+.imageGallery h5 {
+    position: absolute;
+    top: -35px;
+}
+.imageGallery {
+    width: 80%;
+    margin: 0px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 30px;
+    position: relative;
+    padding-bottom: calc(10px + 2vw);
+}
+.imgList{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+}
+.imgList img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.imgList:hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.fullImgHero{
+    display: none;
+} 
+.fullImg {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fullImg img {
+    width: 90%;
+    max-width: 560px;
+}
+.fullImg i{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+}
+.fullImgTitle{
+    position: absolute;
+    color: white;
+    bottom: 6%;
+    font-size: calc(10px + 1vw);
+}
+/* gallery image css end  */
+
+/* mobile responsive */
+@media only screen and (max-width: 480px){
+    .fullImgTitle {
+        bottom: 25%;
+    }
+}

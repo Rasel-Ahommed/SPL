@@ -1,0 +1,50 @@
+.bankBanner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)), url(../img/BankImg.jpg);
+    background-position: center center;
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bankBannerTitle {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: calc(10px + 1vw);
+    font-weight: 600;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.bankTitle {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.bankTitle h3 {
+    font-size: calc(10px + 2vw);
+    font-weight: 800;
+    text-decoration: underline;
+    padding-top: calc(20px + 6vw);
+    padding-bottom: calc(10px + 3vw);
+}
+
+.bankDtls {
+    display: flex;
+    justify-content: center;
+}
+.dtlsBox {
+    background: var(--color-whitesmoke-100);
+    padding: 10px;
+}
+.dtlsBox p {
+    font-size: calc(13px + 0.5vw);
+}
+.dtlsBox p span {
+    font-size: calc(10px + 1vw);
+    font-weight: 600;
+}

@@ -1,0 +1,314 @@
+/* footer css start  */
+.footerHero {
+    background-color: transparent;
+    height: 355px;
+    position: relative;
+}
+
+.clipPath {
+    clip-path: polygon(0 0%, 100% 30%, 100% 100%, 0% 100%);
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-footer);
+    position: absolute;
+    z-index: 2;
+}
+
+.clipPath_2 {
+    clip-path: polygon(0 33%, 100% 0%, 100% 100%, 0% 100%);
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-yellowgreen);
+    position: absolute;
+    z-index: 1;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6%;
+}
+
+.footerLogo {
+    color: white;
+}
+
+.footerLogo img {
+    width: calc(30px + 12vw);
+    background: white;
+    border-radius: 5px;
+}
+
+.footerContact {
+    padding-block: 14px;
+}
+
+.footerContact p {
+    font-size: calc(10px + .5vw);
+}
+
+.footerContact h3 {
+    font-weight: 800;
+    font-size: calc(10px + 2vw);
+}
+
+.footerContact i {
+    padding-right: 10px;
+}
+
+.footerDtls {
+    color: white;
+}
+
+.footerDtls h4 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.avtivities {
+    display: flex;
+    justify-content: space-between;
+}
+
+.joinUs {
+    color: white;
+    text-align: center;
+}
+
+.joinUs h3 {
+    font-weight: 600;
+}
+
+#iconColor {
+    color: white;
+    padding-block: 8px;
+}
+
+#social-btns {
+    padding-block: 6px;
+    padding-left: 22px;
+}
+
+.copyRight {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.copyRight::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.copyRight a {
+    color: white;
+    font-weight: 600;
+}
+
+/* socal button css */
+.socalbtnHero h1,
+h2,
+h3,
+h4,
+h5 {
+    display: block;
+    font-weight: 400;
+}
+
+.socalbtnHero p {
+    display: block;
+}
+
+.socalbtnHero a {
+    text-decoration: none;
+}
+
+.socalbtnHero a:hover {
+    text-decoration: underline;
+}
+
+.socalbtnHero img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.socalbtnHero button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa-brands {
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-btns .btn:before {
+    top: -13%;
+    left: -160%;
+}
+
+.social-btns .btn .fa-brands {
+    transform: scale(0.8);
+}
+
+.social-btns .btn.facebook:before {
+    background-color: #3b5998;
+}
+
+.social-btns .btn.facebook .fa {
+    color: #3b5998;
+}
+
+.social-btns .btn.twitter:before {
+    background-color: #3cf;
+}
+
+.social-btns .btn.twitter .fa {
+    color: #3cf;
+}
+
+.social-btns .btn.google:before {
+    background-color: #1e3050;
+}
+
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+    top: -10%;
+    left: -10%;
+}
+
+.social-btns .btn:focus .fa-brands,
+.social-btns .btn:hover .fa-brands {
+    color: #fff;
+    transform: scale(1);
+    border: none;
+}
+
+.social-btns {
+    height: 45px;
+    margin: auto;
+    padding-left: 34px;
+    padding-block: 35px;
+    font-size: 0;
+    text-align: center;
+    display: flex;
+}
+
+.social-btns .btn {
+    display: inline-block;
+    border: 1px solid;
+    width: 45px;
+    height: 45px;
+    line-height: 30px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+    opacity: 0.99;
+}
+
+.social-btns .btn:hover {
+    border: none;
+}
+
+.social-btns .btn:before {
+    content: "";
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.social-btns .btn .fa-brands {
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+/* footer css end  */
+
+
+/* tablet responsive  */
+@media only screen and (min-width:767px) and (max-width:1023px) {
+
+    .footerHero {
+        height: 310px;
+    }
+
+    .footerDtls {
+        font-size: calc(6px + 0.5vw);
+    }
+
+    .social-btns .btn {
+        width: 40px;
+        height: 40px;
+        line-height: 22px;
+    }
+}
+
+/* mobile responsive  */
+@media only screen and (max-width: 767px) {
+
+    .footerContent {
+        display: block;
+    }
+
+    .footerHero {
+        height: calc(100px + 100vw);
+    }
+
+    .footerContent {
+        display: block;
+        padding-top: 26%;
+        text-align: center;
+    }
+
+    .footerDtls {
+        padding-left: 0;
+    }
+
+    .footerDtls {
+        font-size: calc(6px + 1.5vw);
+    }
+
+    .ul {
+        text-align: justify;
+    }
+
+    .socalbtnHero {
+        padding-bottom: 10px;
+    }
+
+    #social-btns {
+        padding-left: 0;
+    }
+
+    .social-btns {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .social-btns .btn .fa-brands {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+    }
+
+    .copyRight p {
+        font-size: calc(2px + 3vw);
+    }
+}

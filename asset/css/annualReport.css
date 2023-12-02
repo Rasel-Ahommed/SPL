@@ -1,0 +1,148 @@
+.annualReports {
+    background-color: var(--color-whitesmoke-100);
+}
+
+.annualBanner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/annual_reports.webp);
+    background-position: center center;
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.annualBannerTitle {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: calc(10px + 1vw);
+    font-weight: 600;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+
+.annualTitle {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.annualTitle h3 {
+    font-size: calc(10px + 2vw);
+    font-weight: 800;
+    text-decoration: underline;
+    padding-block: calc(20px + 5vw);
+}
+
+/* annual report start  */
+.annualReport {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: calc(10px + 5vw);
+}
+
+
+.reportYear h1 {
+    font-size: calc(6px + 4vw);
+    font-weight: 800;
+    padding-inline: 12px;
+}
+
+.reportDtls {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 25px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    padding-left: 4rem;
+    transition: all .3s;
+}
+.reportDtls::before{
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: var(--color-yellowgreen);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s;
+}
+.reportDtls:hover.reportDtls::before{
+    width: 5px;
+    transition: all .5s;
+}
+.reportDtls::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-yellowgreen);
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    rotate: 315deg;
+}
+
+.reportDtls h3 {
+    font-size: calc(15px + 1vw);
+    font-weight: 600;
+}
+
+.reportDtls p {
+    font-size: calc(9px + .5vw);
+}
+
+.viewBtn {
+    color: #fff;
+    background: var(--color-yellowgreen);
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    font-size: calc(8px + 0.5vw);
+    padding: 12px 12px;
+    display: inline-block;
+    transform: skew(-21deg);
+    transition: all .5s;
+    border-radius: 5px;
+}
+
+.viewBtn:hover {
+    background: #66a407;
+    color: white;
+    transition: all .5s;
+}
+
+.viewBtn>span {
+    display: inline-block;
+    transform: skew(21deg);
+}
+
+
+/* footer  background  */
+.footer {
+    background-color: var(--color-whitesmoke-100);
+}
+
+/* Tablte responsive */
+@media only screen and (min-width:767px) and (max-width:1023px) {
+    .reportYear {
+        min-width: 18%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .reportYear {
+        min-width: 23%;
+    }
+    .reportYear h1 {
+        padding-inline: 0;
+        padding-right: 12px;
+    }
+}

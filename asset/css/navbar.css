@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-quicksand);
+}
+
+/* navbar css start */
+
+nav.stroke {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: calc(20px + 1vw);
+  width: 100%;
+  position: fixed;
+  z-index: 15;
+  transition: all 0.5s;
+}
+
+.logo img {
+  width: calc(50px + 8vw);
+  padding: 5px;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 8px;
+  font-size: calc(8px + 0.5vw);
+}
+a.navbtn {
+  text-decoration: none;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+
+nav ul li a:hover {
+  color: var(--color-yellowgreen);
+}
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: var(--color-yellowgreen);
+  height: 2px;
+}
+
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+.active {
+  color: var(--color-yellowgreen) !important;
+}
+
+.active:before {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  content: "";
+  background: var(--color-yellowgreen);
+  height: 2px;
+}
+
+.bgColorNav {
+  background-color: #f9f9f9;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 12px;
+}
+
+.bgColorNav a {
+  color: #383838;
+}
+
+.bgColorNav i {
+  color: #383838;
+}
+
+.menuLine {
+  font-size: calc(10px + 2vw);
+  display: none;
+}
+
+/* navbar css end */
+
+/* donate button css start  */
+.donateHero {
+  position: fixed;
+  bottom: 40px;
+  right: 14px;
+  z-index: 15;
+  background-color: #77be0d;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.7);
+  transition: all .5s;
+  overflow: hidden;
+  animation: bounce 0.9s infinite;
+}
+
+@keyframes bounce {
+  10% {
+    transform: translateY(10px);
+  }
+}
+
+.donateBtn i.fa-solid.fa-circle-dollar-to-slot {
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 8px;
+}
+
+.donateBtn {
+  display: flex;
+  align-items: center;
+}
+
+.donateBtn span {
+  transition: all .5s;
+  display: none;
+  font-weight: 800;
+}
+
+.donateHero:hover {
+  width: 115px;
+  transition: all .5s;
+}
+
+.donateHero:hover .donateBtn span {
+  display: block;
+  transition: all .5s;
+}
+
+/* donate button css end  */
+
+
+/* responsive design */
+
+/* Tablte responsive */
+@media only screen and (min-width:481px) and (max-width:900px) {
+  .menuLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 95%;
+    left: 0;
+    background-color: white;
+  }
+
+  nav ul li a {
+    color: #383838;
+  }
+
+  nav.stroke {
+    background-color: #f9f9f9;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 12px;
+  }
+}
+
+
+/* mobile responsive  */
+@media only screen and (max-width: 480px) {
+  .menuLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 95%;
+    left: 0;
+    background-color: white;
+    padding-left: 0;
+  }
+
+  nav ul li a {
+    color: #383838;
+  }
+
+  nav.stroke {
+    background-color: #f9f9f9;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 12px;
+  }
+
+
+}
